@@ -85,7 +85,7 @@ Refonte dramatique : design éditorial haut de gamme, mobile-first, marque perso
 - [ ] Favicon .png/.ico (optionnel, lettre "D" actuelle sur fond nuit/or)
 
 ## Déploiement
-- [x] Dépôt GitHub public : https://github.com/reimann314/dhora (branche `main`)
+- [x] Dépôt GitHub public : https://github.com/tazeed314/dhora (branche `main`)
 - [ ] Lier à Cloudflare Pages (compte neuf) — preset None, build vide, output `/`
 - [ ] Mettre à jour `sitemap.xml` + URL canoniques/OG avec le vrai domaine `.pages.dev`
 - [ ] Tester mobile/tablette/desktop en ligne
