@@ -86,8 +86,9 @@ Refonte dramatique : design éditorial haut de gamme, mobile-first, marque perso
 
 ## Déploiement
 - [x] Dépôt GitHub public : https://github.com/tazeed314/dhora (branche `main`)
-- [ ] Lier à Cloudflare Pages (compte neuf) — preset None, build vide, output `/`
-- [ ] Mettre à jour `sitemap.xml` + URL canoniques/OG avec le vrai domaine `.pages.dev`
+- [x] Cloudflare Pages (compte neuf) — preset None, build vide, output `/`
+- [x] En ligne : **https://dhorra.pages.dev** (auto-deploy à chaque `push` sur `main`)
+- [x] `sitemap.xml`, `canonical`, `hreflang` + OG mis à jour avec le domaine réel
 - [ ] Tester mobile/tablette/desktop en ligne
 - [ ] Domaine personnalisé (si disponible)
 

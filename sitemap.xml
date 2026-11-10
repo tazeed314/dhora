@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dhora-website.pages.dev/</loc>
+    <loc>https://dhorra.pages.dev/</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://dhora-website.pages.dev/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://dhora-website.pages.dev/ar.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dhorra.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dhorra.pages.dev/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dhorra.pages.dev/"/>
   </url>
   <url>
-    <loc>https://dhora-website.pages.dev/ar.html</loc>
+    <loc>https://dhorra.pages.dev/ar</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://dhora-website.pages.dev/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://dhora-website.pages.dev/ar.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dhorra.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dhorra.pages.dev/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dhorra.pages.dev/"/>
   </url>
   <url>
-    <loc>https://dhora-website.pages.dev/formations.html</loc>
+    <loc>https://dhorra.pages.dev/formations</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://dhora-website.pages.dev/formations.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://dhora-website.pages.dev/formations-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dhorra.pages.dev/formations"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dhorra.pages.dev/formations-ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dhorra.pages.dev/formations"/>
   </url>
   <url>
-    <loc>https://dhora-website.pages.dev/formations-ar.html</loc>
+    <loc>https://dhorra.pages.dev/formations-ar</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://dhora-website.pages.dev/formations.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://dhora-website.pages.dev/formations-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dhorra.pages.dev/formations"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dhorra.pages.dev/formations-ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dhorra.pages.dev/formations"/>
   </url>
 </urlset>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dhora-website.pages.dev/sitemap.xml
+Sitemap: https://dhorra.pages.dev/sitemap.xml
