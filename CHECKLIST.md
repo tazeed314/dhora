@@ -85,14 +85,20 @@ Refonte dramatique : design éditorial haut de gamme, mobile-first, marque perso
 - [ ] Favicon .png/.ico (optionnel, lettre "D" actuelle sur fond nuit/or)
 
 ## Déploiement
-- [ ] Pousser sur GitHub (`dhora-website`)
-- [ ] Lier à Cloudflare Pages (build vide, output `/`)
+- [x] Dépôt GitHub public : https://github.com/reimann314/dhora (branche `main`)
+- [ ] Lier à Cloudflare Pages (compte neuf) — preset None, build vide, output `/`
+- [ ] Mettre à jour `sitemap.xml` + URL canoniques/OG avec le vrai domaine `.pages.dev`
 - [ ] Tester mobile/tablette/desktop en ligne
 - [ ] Domaine personnalisé (si disponible)
 
 ## Fichiers
-- index.html — site complet
+- index.html — accueil FR
+- ar.html — accueil AR (RTL)
+- formations.html / formations-ar.html — pages formations
 - css/style.css — design system + mobile-first
 - 404.html — page d'erreur
 - sitemap.xml, robots.txt
-- Chantier Aligné.pdf — guide masterclass
+
+## Exclus du dépôt (`.gitignore`)
+- `Chantier Aligné.pdf` — document privé, retiré du site (liens de téléchargement supprimés)
+- `pdf_text.txt`, images sources non utilisées
