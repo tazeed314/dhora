@@ -1,105 +1,96 @@
-# CHECKLIST — Site Dhora Ghimouze (refonte premium, sans logo)
+# CHECKLIST — Site Dhora Ghimouze (refonte « Porta »)
 
-Refonte dramatique : design éditorial haut de gamme, mobile-first, marque personnelle (pas de logo).
+Refonte visuelle inspirée de Porta : carte crème sur canevas lavande, titres fins avec un mot accentué en gras, boutons pilule, cartes couleur, chiffres 01/03, panneau jaune et cartes « bulle ».
 
 ## Design system (TERMINÉ)
-- [x] Palette premium : bleu nuit (`#14161f`) + or (`#b08948`) + crème (`#f7f3ec`)
-- [x] Typographie : Fraunces (titres éditoriaux) + Inter (corps)
-- [x] CSS 100% custom (plus de CDN Tailwind) → rapide, cohérent, unique
-- [x] Composants : boutons, cartes, piliers, diagramme, accordéon, formulaires
-- [x] Hero visuel : SVG d'architecture (blueprint) sur mesure — pas d'image externe
-- [x] Sceau "A·O·S" (Anticiper / Organiser / Sécuriser)
+- [x] Canevas lavande `#F1EFF4`, carte crème `#FDF6EA`, encre `#211231`
+- [x] Accent violet `#501D7A`, jaune soleil `#FADB86`, gris doux `#685E76`
+- [x] Typographie unique **Zain** (latin + arabe), poids 200 à 700
+- [x] CSS 100 % custom, aucun framework
+- [x] Composants : `.page`, `.topbar`, `.hero`, `.visual-panel`, `.color-card`, `.steps`, `.statement`, `.sun-panel`, `.bubbles`, `.faq-grid`, `.form-card`
+- [x] Hero visuel : panneau jaune « 10 décembre 2026 » + carte flottante (90 min / 20h00 Alger / en ligne / gratuit)
+- [x] Courbes décoratives discrètes dans le panneau jaune (pas de blueprint, pas de sceau, pas de compte à rebours)
 
 ## Structure & contenu (TERMINÉ)
-- [x] Header fixe avec état au scroll, marque textuelle + tagline
-- [x] Hero : accroche éditoriale, 2 CTA, 3 chiffres clés
-- [x] Bandeau thématique (contrats, marchés, assurances, sous-traitance, BTP)
-- [x] Méthode en 3 piliers numérotés (01/02/03)
-- [x] Diagramme d'alignement : Contrat + Assurance + Sous-traitant → Marge sécurisée
-- [x] Bande citation signature (fond sombre)
-- [x] À propos : portrait (placeholder) + récit en blocs + faits (ville, métier, spécialisation)
-- [x] Services : 3 cartes (conseil juridique, formation & webinars, accompagnement chantier)
-- [x] Masterclass : section sombre de conversion (date, compte à rebours, bénéfices, présenté par)
-- [x] FAQ : accordéon (4 questions)
-- [x] Contact : coordonnées + formulaire (mailto, pas de faux backend)
-- [x] Footer complet
+- [x] Barre haute : marque, nav, FR/عربي, bouton « Réserver ma place », menu mobile
+- [x] Hero : accroche, 2 CTA, 3 chiffres clés
+- [x] Services : 3 grandes cartes couleur (violet / jaune / noir)
+- [x] Méthode : 3 colonnes numérotées 01/03 → 03/03
+- [x] Citation signature en gros texte fin
+- [x] À propos : récit + panneau « En bref » (sans photo)
+- [x] Masterclass : panneau jaune, 3 cartes bulle (apprendre / public / après inscription) + CTA
+- [x] FAQ : 5 questions en cartes bulle, 2 colonnes, accordéon
+- [x] Contact : coordonnées + formulaire WhatsApp
+- [x] Footer
 
 ## Mobile-first (TERMINÉ)
-- [x] Menu mobile plein écran (ouverture/fermeture, overlay z-index, fermeture au clic)
-- [x] Boutons pleine largeur sur petit écran
-- [x] Hero : visuel recadré (4/3), sceau réduit, tailles de police ajustées
-- [x] Grilles qui s'empilent (piliers, services, diagramme, contact)
-- [x] Zones tactiles ≥ 48px
-- [x] `overflow-x: hidden` pour éviter les débordements
-- [x] Tablette (641–980px) : espacements adaptés
+- [x] Menu mobile plein écran (ouverture/fermeture, Échap, fermeture au clic)
+- [x] Hero empilé : panneau jaune puis carte d'infos puis texte
+- [x] Services en défilement horizontal avec accroche (scroll-snap)
+- [x] Grilles qui s'empilent (méthode, à propos, bulles, FAQ, contact)
+- [x] Zones tactiles confortables
+- [x] Vérifié à 600 px (Chrome headless ignore les largeurs < 500 px)
 
 ## Interactivité (TERMINÉ)
-- [x] Compte à rebours en direct (4 cellules) + état "session à venir"
-- [x] Accordéon FAQ accessible (aria-expanded, une seule ouverte)
-- [x] Formulaire → prépare un mailto (honnête, pas de faux succès)
+- [x] Accordéon FAQ accessible (`aria-expanded`, une seule ouverte)
+- [x] Formulaire : nom, téléphone, e-mail facultatif, profession, wilaya, message → ouvre WhatsApp avec le texte prérempli
+- [x] Aucun faux backend, aucun faux succès : message clair « il ne reste qu'à envoyer »
+- [x] Masquage du bouton d'inscription une fois la date passée (10/12/2026 20:00 UTC+1)
 - [x] Révélation au scroll (respecte `prefers-reduced-motion`)
-- [x] Header qui change au scroll
 
 ## SEO & technique (TERMINÉ)
 - [x] Meta title/description, Open Graph, Twitter Card
-- [x] JSON-LD (LegalService + Person)
-- [x] sitemap.xml, robots.txt
+- [x] JSON-LD (ProfessionalService + Person)
+- [x] `sitemap.xml`, `robots.txt`
 - [x] Page 404 au nouveau design
-- [x] Styles d'impression
-- [x] Accessibilité (skip link, focus visible, aria, alt/role sur SVG)
+- [x] Accessibilité (skip link, focus visible, aria, libellés de formulaire)
 
 ## Bilingue FR / AR (TERMINÉ)
-- [x] Page arabe complète `ar.html` avec `lang="ar"` + `dir="rtl"`
-- [x] Sélecteur de langue dans l'en-tête et le menu mobile (FR / AR)
-- [x] Police arabe éditoriale : Amiri (titres) + Tajawal (corps)
-- [x] Ajustements RTL dans le CSS (flèches, soulignés, badge portrait, citation)
-- [x] `hreflang` alternates + `sitemap.xml` bilingue
+- [x] `ar.html` complet, `lang="ar"` + `dir="rtl"`
+- [x] Sélecteur FR / عربي dans l'en-tête et le menu mobile
+- [x] Même police Zain pour les deux langues
+- [x] Ajustements RTL (flèches, puces, panneau jaune, carte flottante, champs téléphone/e-mail en LTR)
+- [x] `hreflang` + `sitemap.xml` bilingue
 - [x] Traduction complète de toutes les sections
 
-## Police Zain (TERMINÉ)
-- [x] Police unique **Zain** (latin + arabe) sur tout le site
-- [x] Liens Google Fonts mis à jour (index, ar, formations, formations-ar, 404)
-- [x] Variables CSS `--serif` et `--sans` + override RTL pointent vers Zain
-
-## En-tête desktop corrigé (TERMINÉ)
-- [x] Grille `1fr auto 1fr` : marque à gauche, menu centré, actions à droite
-- [x] Sélecteur de langue (FR / AR) placé à l'extrême droite, après le bouton CTA
-- [x] Comportement mobile inchangé (menu plein écran)
-
 ## Page Formations (TERMINÉ)
-- [x] `formations.html` (FR) + `formations-ar.html` (AR, RTL)
-- [x] Note : élargissement au-delà des « Entrepreneurs BTP », formations à venir, certaines payantes/gratuites
-- [x] Aperçu de 4 thématiques (droit des contrats, assurances, marchés, risques & sous-traitance) avec badges Gratuit/Payant/Bientôt
-- [x] Lien « Formations / التكوينات » ajouté aux nav (desktop + mobile) et footers
-- [x] Sélecteur de langue croisé entre les deux pages formations
-- [x] `sitemap.xml` mis à jour (4 URLs)
+- [x] `formations.html` (FR) + `formations-ar.html` (AR, RTL), même coque visuelle
+- [x] Note : ouverture au-delà des entrepreneurs BTP, formations à venir, certaines payantes/gratuites
+- [x] 4 thématiques en grille 2×2 avec badges Gratuit / Payant / Bientôt
+- [x] Bandeau jaune de rappel vers la masterclass
+- [x] Liens croisés FR ↔ AR
 
-## Portrait (TERMINÉ)
-- [x] Image `assets/portrait.webp` intégrée dans « À propos » (FR + AR)
-- Remarque : il s'agit d'une illustration silhouette (pas une photo réelle) — remplaçable par une vraie photo plus tard
+## Coordonnées (TERMINÉ)
+- [x] Téléphone + WhatsApp : **+213 668 11 33 66**
+- [x] Aucune adresse e-mail inventée : WhatsApp remplace le mailto
+- [x] Inscription masterclass : `https://dhoraghimouze.systeme.io/inscription-11-2026`
+
+## Masterclass
+- Date unique : **jeudi 10 décembre 2026, 20h00 heure d'Alger (UTC+1)**
+- En ligne, 90 minutes, gratuit
+- [x] Date identique dans le hero, le panneau jaune, la FAQ, la page formations et la page arabe
+- [ ] Mettre à jour la page Systeme.io (contenu FR fourni séparément)
 
 ## À fournir par vous (assets personnels)
-- [ ] Vrai e-mail (dans Contact + lien mailto du formulaire + masterclass)
-- [ ] Vrai téléphone (section Contact)
+- [ ] Vraie photo (facultative) — `assets/portrait.webp` est une silhouette non utilisée
 - [ ] Vrais témoignages (section à ajouter quand disponibles)
-- [ ] Favicon .png/.ico (optionnel, lettre "D" actuelle sur fond nuit/or)
+- [ ] Favicon .png/.ico (optionnel ; lettre « D » en SVG actuellement)
 
 ## Déploiement
-- [x] Dépôt GitHub public : https://github.com/tazeed314/dhora (branche `main`)
-- [x] Cloudflare Pages (compte neuf) — preset None, build vide, output `/`
-- [x] En ligne : **https://dhorra.pages.dev** (auto-deploy à chaque `push` sur `main`)
-- [x] `sitemap.xml`, `canonical`, `hreflang` + OG mis à jour avec le domaine réel
-- [ ] Tester mobile/tablette/desktop en ligne
+- [x] Dépôt GitHub : https://github.com/tazeed314/dhora (branche `main`)
+- [x] Cloudflare Pages, projet `dhorra` → **https://dhorra.pages.dev**
+- [ ] Le site en ligne sert encore l'ancien design : pousser après validation
+- [ ] Tester mobile / tablette / desktop en ligne
 - [ ] Domaine personnalisé (si disponible)
 
 ## Fichiers
 - index.html — accueil FR
 - ar.html — accueil AR (RTL)
 - formations.html / formations-ar.html — pages formations
-- css/style.css — design system + mobile-first
+- css/style.css — design system complet
 - 404.html — page d'erreur
 - sitemap.xml, robots.txt
 
 ## Exclus du dépôt (`.gitignore`)
-- `Chantier Aligné.pdf` — document privé, retiré du site (liens de téléchargement supprimés)
+- `Chantier Aligné.pdf` — document privé
 - `pdf_text.txt`, images sources non utilisées
